@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a problem so we can fix it
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please **do not** report security vulnerabilities
+        here — see `SECURITY.md` for private reporting. Never paste real personal data
+        or scan reports.
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Kali 2024.2 / Ubuntu 24.04"
+    validations:
+      required: true
+  - type: input
+    id: install
+    attributes:
+      label: How did you install it?
+      placeholder: "from source / --setup (pipx)"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, what did you expect, what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / error messages
+      render: shell

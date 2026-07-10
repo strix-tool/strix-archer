@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Archer runtime output (never commit reports — they may contain personal data)
+strix_*.txt
+strix_*.html
+*.log
+
+# Environments / editors / OS
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Installers & analysis artifacts (published via GitHub Releases; never committed)
+*.exe
+*.msi
+/*.spec
+bin/
+obj/
+.sonarqube/
+.scannerwork/
